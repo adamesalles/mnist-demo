@@ -154,7 +154,7 @@
 		color: white;
 		font-size: 0.85rem;
 		font-weight: 600;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		/* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */
 	}
 	
 	@media (max-width: 768px) {

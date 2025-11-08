@@ -151,7 +151,7 @@
 		margin: 0 0 10px 0;
 		font-size: 2.5rem;
 		font-weight: 600;
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		/* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 	}
 	
 	.subtitle {
