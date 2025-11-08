@@ -76,6 +76,7 @@
 		width: 100%;
 		max-width: 600px;
 		margin: 0 auto;
+		overflow-x: hidden;
 	}
 	
 	h3 {
@@ -94,6 +95,10 @@
 		border-radius: 12px;
 		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 		font-size: 1.2rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.result-label {
@@ -121,6 +126,7 @@
 		padding: 20px;
 		border-radius: 12px;
 		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+		box-sizing: border-box;
 	}
 	
 	.probability-item {
@@ -161,32 +167,62 @@
 		h3 {
 			font-size: 1.2rem;
 		}
-		
+
 		.prediction-result {
 			padding: 15px 20px;
 			font-size: 1rem;
 		}
-		
+
 		.result-value {
 			font-size: 2rem;
 		}
-		
+
 		.probabilities-grid {
-			padding: 15px;
-			gap: 10px;
+			padding: 15px 10px;
+			gap: 8px;
 		}
-		
+
+		.probability-item {
+			gap: 6px;
+		}
+
 		.digit-label {
-			font-size: 1rem;
-			min-width: 20px;
+			font-size: 0.9rem;
+			min-width: 18px;
 		}
-		
+
 		.probability-bar {
-			height: 28px;
+			height: 26px;
+			min-width: 50px;
 		}
-		
+
 		.probability-text {
-			font-size: 0.75rem;
+			font-size: 0.7rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.probabilities-grid {
+			padding: 12px 8px;
+			gap: 6px;
+		}
+
+		.probability-item {
+			gap: 4px;
+		}
+
+		.digit-label {
+			font-size: 0.85rem;
+			min-width: 16px;
+		}
+
+		.probability-bar {
+			height: 24px;
+			min-width: 40px;
+		}
+
+		.probability-text {
+			font-size: 0.65rem;
 		}
 	}
 </style>

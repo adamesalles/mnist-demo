@@ -95,6 +95,15 @@
 							Rede neural treinada por nós utilizando o dataset MNIST (LeCun et al., 1998)
 						</p>
 					</div>
+
+					<div class="qr-card">
+						<p class="qr-label">Teste no seu celular</p>
+						<img
+							src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://eadame.ovh/mnist-demo"
+							alt="QR Code para teste no celular"
+							class="qr-code"
+						/>
+					</div>
 				</div>
 			</div>
 		{/if}
@@ -109,6 +118,7 @@
 		background: #f5f5f5;
 		color: #333;
 		min-height: 100vh;
+		overflow-x: hidden;
 	}
 	
 	main {
@@ -213,6 +223,9 @@
 		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 		flex: 1;
 		max-width: 700px;
+		width: 100%;
+		box-sizing: border-box;
+		overflow-x: hidden;
 	}
 	
 	.info-section {
@@ -261,6 +274,29 @@
 		font-size: 0.75rem;
 		opacity: 0.9;
 	}
+
+	.qr-card {
+		background: rgba(255, 255, 255, 0.95);
+		padding: 20px;
+		border-radius: 12px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+		text-align: center;
+	}
+
+	.qr-label {
+		margin: 0 0 12px 0;
+		font-size: 0.9rem;
+		color: #2A5AB3;
+		font-weight: 500;
+	}
+
+	.qr-code {
+		width: 180px;
+		height: 180px;
+		border-radius: 8px;
+		display: block;
+		margin: 0 auto;
+	}
 	
 	@media (max-width: 1100px) {
 		.main-layout {
@@ -292,7 +328,7 @@
 		}
 
 		.content {
-			padding: 25px 20px;
+			padding: 20px 15px;
 			gap: 30px;
 		}
 
@@ -306,6 +342,47 @@
 
 		.footer-card p {
 			font-size: 0.75rem;
+		}
+
+		.qr-card {
+			padding: 15px;
+		}
+
+		.qr-code {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		.subtitle {
+			font-size: 0.85rem;
+		}
+
+		.content {
+			padding: 15px 10px;
+			gap: 25px;
+		}
+
+		.info-section {
+			padding: 15px 20px;
+		}
+
+		.footer-card {
+			padding: 12px;
+		}
+
+		.qr-card {
+			padding: 12px;
+		}
+
+		.qr-code {
+			width: 130px;
+			height: 130px;
 		}
 	}
 </style>
