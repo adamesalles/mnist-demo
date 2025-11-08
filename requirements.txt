@@ -1,0 +1,11 @@
+# For Apple Silicon (M1/M2/M3), install with uv:
+# uv pip install tensorflow-macos tensorflow-metal tensorflowjs numpy
+
+# For other platforms:
+tensorflow>=2.13.0
+tensorflowjs>=4.10.0
+numpy>=1.24.0
+
+# Apple Silicon specific (uncomment if using):
+# tensorflow-macos>=2.13.0
+# tensorflow-metal>=1.0.0
